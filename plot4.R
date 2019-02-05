@@ -16,5 +16,5 @@ with(data, {plot(Sub_metering_1~Date_time, type="l",ylab="Energy sub metering", 
 })
 legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lty=1, lwd=2)
 plot(Global_reactive_power~Date_time,type="l",xlab="datetime")
-dev.copy(png, file = "plot4.png")
+dev.copy(png, file = "plot4.png",height = 480, width = 480)
 dev.off()
