@@ -11,5 +11,5 @@ with(data, {plot(Sub_metering_1~Date_time, type="l",ylab="Energy sub metering", 
   lines(Sub_metering_3~Date_time,col='Blue')
   lines(Sub_metering_2~Date_time,col='Red')})
 legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),col=c("black", "red", "blue"), lty=1, lwd=2)
-dev.copy(png, file = "plot3.png")
+dev.copy(png, file = "plot3.png",height = 480, width = 480)
 dev.off()
